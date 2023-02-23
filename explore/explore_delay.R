@@ -14,5 +14,5 @@ delay.rep <- delay %>%
 
 ggplot(delay.rep) +
   geom_segment(aes(x = notified, xend = est_completion, y = n, yend = n), linewidth = 2, color = "grey") +
-  geom_segment(aes(x = notified, xend = est_completion.robust, y = n, yend = n)) +
+  #geom_segment(aes(x = notified, xend = est_completion.robust, y = n, yend = n)) +
   theme_minimal()
